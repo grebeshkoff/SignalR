@@ -37,6 +37,8 @@ namespace Microsoft.AspNet.SignalR.Hubs
         /// Called when a connection is disconnected from the <see cref="IHub"/>.
         /// </summary>
         Task OnDisconnected();
+
+        Task OnMethodMissing();
     }
 }
 

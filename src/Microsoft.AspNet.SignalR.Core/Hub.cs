@@ -67,6 +67,11 @@ namespace Microsoft.AspNet.SignalR
         {
         }
 
+        public virtual Task OnMethodMissing()
+        {
+            return TaskAsyncHelper.Empty;
+        }
+
         public void Dispose()
         {
             Dispose(true);
